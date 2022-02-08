@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Sort</title>
+    </head>
+    <body>
+    <div>
+        <h1 style="text-align: center;">We are using Sort,Length Push</h1>
+        <p style="text-align: center;" id="Sort"></p>
+        <p style="text-align: center;" id="Length"></p>
+    </div>
+        <script>
+            var Fruits = ["Stawberry","Apple","Mango","Peach","Banana"];
+            var Sorting = Fruits.sort();
+            alert(Fruits[3])
+            document.getElementById('Sort').innerHTML = Sorting; 
+            Fruits.push('Mango') 
+            alert(Fruits[5]);  
+            var Fruits = Fruits.length;
+            document.getElementById('Length').innerHTML = Fruits;
+        </script>
+    </body>
+</html>

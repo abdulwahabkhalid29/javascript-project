@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Addittion</title>
+    </head>
+    <body>
+        <p id="Normalway"></p>
+        <p id="Addition"></p>
+        <p id="arrayWay"></p>
+        <p id="AdditionArray"></p>
+        <script>
+            var x = 6 ;
+            var y = 4 ;
+            document.getElementById("Normalway").innerHTML="The value of x is "+x+' <br>  The value of y is '+y;
+            var Addition = x + y ;
+            document.getElementById("Addition").innerHTML="The Addition is "+Addition;
+            var AdditionArray = [4,5,6]
+            document.getElementById("arrayWay").innerHTML="The value of  x through array is "+AdditionArray[0]+'<br> The value of  y through array is '+AdditionArray[1];
+            var AdditionThroughArray = AdditionArray[0] + AdditionArray[1];
+            document.getElementById("AdditionArray").innerHTML="The Addition through array is "+AdditionThroughArray;
+        </script>
+    </body>
+</html>

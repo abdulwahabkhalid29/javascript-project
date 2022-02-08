@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>JS Keys</title>
+        <style>
+            body{
+                 background-color:lightgray;
+                 text-align: center;
+                 background-image: url(image/FahadBG.jpg);
+                 margin-top: 80px;
+                 overflow: hidden;
+                }
+              h1{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 40px;
+                color: darkred;
+               }
+              p{
+                font-size: 30px;
+                color: darkblue;
+               }
+          .div1{
+                margin-left: 600px;
+                margin-right: 600px;
+                height: 220px;
+                font-size: 40px;
+                font-family: fantasy;
+                background: url(image/WahabBG.jpg);
+                border: 3px solid white;
+                opacity: 0.8;
+               }
+          .div2{
+                margin-left: 600px;
+                margin-right: 600px;
+                height: 220px;
+                font-size: 40px;
+                font-family: fantasy;
+                background: url(image/WahabBG.jpg);
+                border: 3px solid white;
+                opacity: 0.8;
+               }
+          .div3{
+                margin-left: 600px;
+                margin-right: 600px;
+                height: 220px;
+                font-size: 40px;
+                font-family: fantasy;
+                background: url(image/WahabBG.jpg);
+                border: 3px solid white;
+                opacity: 0.8;
+               }
+          .div4{
+                margin-left: 600px;
+                margin-right: 600px;
+                height: 220px;
+                font-size: 40px;
+                font-family: fantasy;
+                background: url(image/WahabBG.jpg);
+                border: 3px solid white;
+                opacity: 0.8;
+               }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+        <h1>JS Max Style</h1>
+        <p id="Max"></p><br><br><br>
+    </div><br>
+    <div class="div2">
+        <h1>JS Min Style</h1>
+        <p id="Min"></p><br><br><br>
+    </div><br>
+    <div class="div3">
+        <h1>JS Reduce Style</h1>
+        <p id="Reduce"></p><br><br><br>
+    </div><br>
+    <div class="div4">
+        <h1>JS Reduces Style</h1>
+        <p id="Reduces"></p><br><br><br>
+    </div>     
+        <script>
+            var Numerically = [200,500,900,300,700,800]
+            document.getElementById('Max').innerHTML = myArrayMax(Numerically) ;
+            function myArrayMax(Numerically){
+                return Math.max.apply(0,Numerically);
+            }
+            document.getElementById('Min').innerHTML = myArrayMin(Numerically) ;
+            function myArrayMin(Numerically){
+            return Math.min.apply(0,Numerically);
+            }
+            var sum = Numerically.reduce(myfunction);
+            document.getElementById('Reduce').innerHTML = sum;
+            function myfunction  (total,value){
+                return total + value ;
+            }
+            var sum = Numerically.reduce(myfunction,56);
+            document.getElementById('Reduces').innerHTML = sum;
+            function myfunction  (total,value){
+                return total + value ;
+            }
+        </script>
+    </body>
+</html>

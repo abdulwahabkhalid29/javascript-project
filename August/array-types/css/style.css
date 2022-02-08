@@ -1,0 +1,27 @@
+body{
+    background-color: aquamarine;
+}
+div{
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 5px solid black;
+    text-align: center;
+    background-color: pink;
+    height: auto;
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+}
+p,button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: purple;
+    font-size: larger;
+}
+button{
+    border: 2px solid blue;
+    padding: 10px;
+    cursor: pointer;
+}

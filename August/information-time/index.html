@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Today Information of time</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="div1">
+    <div class="div2">
+        <h1 class="heading1">Today Information of time</h1>
+        <p id="newdate"></p>
+    </div>
+    <div class="div3">
+        <h1 class="h2"><strong> Year  </strong></h1>
+        <p id="Year"></p>
+    </div>
+    <div class="div4">
+        <h1 class="h3"><strong> Month  </strong></h1>
+        <p id="month"></p>
+    </div>
+    <div class="div5">
+        <h1 class="h4"><strong> Date  </strong></h1>
+        <p id="date"></p>
+    </div>
+    <div class="div6">
+        <h1 class="h5"><strong> Hours  </strong></h1>
+        <p id="hours"></p>
+    </div>
+    <div class="div7">
+        <h1 class="h6"><strong> Minutes  </strong></h1>
+        <p id="minutes"></p>
+    </div>
+    <div class="div8">
+        <h1 class="h7"><strong> Seconds  </strong></h1>
+        <p id="seconds"></p>
+    </div>
+        </div>
+     <script>
+            var x = new Date()
+            document.getElementById('newdate').innerHTML = x;
+            document.getElementById('Year').innerHTML = x . getFullYear();
+            document.getElementById('month').innerHTML = x . getMonth() +1;
+            document.getElementById('date').innerHTML = x . getDate();
+            document.getElementById('hours').innerHTML = x . getHours();
+            document.getElementById('minutes').innerHTML = x . getMinutes();
+            document.getElementById('seconds').innerHTML = x . getSeconds();
+        </script>
+    </body>
+</html>

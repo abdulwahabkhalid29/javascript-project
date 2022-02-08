@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>javascript</title>
+        <h1>This is my first javascript</h1>
+        <p id="Dynomo">my first javascript is very hard</p>
+        
+        <button type="button" onclick="document.getElementById('Dynomo').innerHTML='Change Text'">My button</button><br>
+        <button type="button" onclick="functionOne()">SHOE IMAGE</button>
+        <img style="height: 900px;" src="image1.PNG" id="MyImage"  >
+        <button type="button" onclick="functionTwo()">WATCH IMAGE</button>
+    
+<script>
+    function functionOne(){
+        document.getElementById('MyImage').src='image1.PNG'
+    }
+
+    function functionTwo(){
+        document.getElementById('MyImage').src='image2.PNG' 
+    }
+</script>
+      
+    </body>
+</html>

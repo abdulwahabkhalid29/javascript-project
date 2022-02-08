@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>JavaScript Operator</title>
+    </head>
+    <body>
+        <h2>The += Operator</h2>
+        <p id="addition"></p>
+        <p id="subtraction"></p>
+        <p id="multiplication"></p>
+        <p id="division"></p>
+        <script>
+            var addition = 10;
+            var subtraction = 15;
+            var multiplication = 20;
+            var division = 25;
+
+            addition += 5;  
+            document.getElementById("addition").innerHTML = addition;
+            
+            subtraction -= 5;  
+            document.getElementById("subtraction").innerHTML = subtraction;
+            
+            multiplication *= 5;  
+            document.getElementById("multiplication").innerHTML = multiplication;
+            
+            division /= 5;  
+            document.getElementById("division").innerHTML = division;
+        </script>
+    </body>
+</html>

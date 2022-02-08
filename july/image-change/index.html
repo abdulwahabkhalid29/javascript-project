@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <h2>My First Invention</h2>
+        <p>This is my first invention is very hard.</p>
+        <button type="button" onclick="functionOne()">Turn on the light</button>
+        <img src="image/pic_bulboff.gif" id="MyImage" style="width: 100px;" >
+        <button type="button" onclick="functionTwo()">Turn off the light</button>
+    </body>
+<script>
+    function functionOne(){
+        document.getElementById('MyImage').src='image/pic_bulbon.gif'
+    }
+
+    function functionTwo(){
+        document.getElementById('MyImage').src='image/pic_bulboff.gif'
+    }
+</script>
+</html>
+
+

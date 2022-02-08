@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Array Type</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <div>
+        <h1>Array Type</h1>
+         <p id="Delete"></p>
+        <button type="button" onclick="deleteArray()" value="deleteArray"> Delete Button</button><br><br><br>
+         <p id="Splice"></p>
+        <button type="button" onclick="spliceArray()" value="spliceArray">Splice Array</button><br><br><br>
+         <p id="Concat"></p>
+        <button type="button" onclick="concatArray()" value="concatArray">Concat Buttton</button><br><br><br>
+         <p id="Slice"></p>
+        <button type="button" onclick="sliceArrray()" value="sliceArrray">Slice Button</button><br><br><br>     
+         <p id="Reverse"></p>
+        <button type="button" onclick="reverseArray()" value="reverseArray">Reverse Buttton</button><br><br><br>
+        <button type="button" onclick="numericallyarray()" value="numericallyarray">Numerically</button>
+        <button type="button" onclick="AlphabeticallyArray()" value="AlphabeticallyArray">Alphabetcally</button>
+         <p id="Numerically"></p><br><br><br>
+         <p id="Random"></p>
+        <button type="button" onclick="randomArray()" value="randomArray">Random Button</button>
+    </div>
+        <script>
+            var Country = ["Pakistan","Newzealand","Brazil","America"]
+            var Company = ["Lays","Piano","Fountain"]
+            document.getElementById('Delete').innerHTML = Country ;
+            function deleteArray(){
+                delete Country[2];
+                document.getElementById('Delete').innerHTML = Country ;
+            }
+            function spliceArray(){
+                Country.splice(2,0,"China","Indonesia");
+                document.getElementById('Splice').innerHTML = Country ;
+            }
+            function concatArray(){ 
+                var Many = Country.concat(Company);
+                document.getElementById('Concat').innerHTML =  Many;
+            }
+            function sliceArrray(){
+                Country = Country.slice(3);
+                document.getElementById('Slice').innerHTML =  Country;
+            }
+            function reverseArray(){
+                Country.reverse();
+                document.getElementById('Reverse').innerHTML = Country ;
+            }
+            function numericallyarray(){
+                Nu.sort();
+                document.getElementById('Numerically').innerHTML = Nu ;
+            }
+            var Nu = [40,100,15,25,10]
+            function AlphabeticallyArray(){
+                Nu.sort(function (a,b){return a-b});
+                document.getElementById('Numerically').innerHTML = Nu ;
+            }
+            function randomArray(){
+                Nu.sort(function (a,b){return 0.5-Math.random()});
+                document.getElementById('Random').innerHTML = Nu ;
+            }
+        </script> 
+    </body>
+</html>

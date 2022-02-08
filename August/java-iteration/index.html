@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Javascript Iteration</title>
+    </head>
+    <body>
+        <p id="each"></p>      
+        <p id="map"></p>
+        <p id="filter"></p>
+        <script>
+            var Alphabet = ["Fahad","Wahab","Zeeshan","Farigh"];
+            var demo = "" ;
+            Alphabet.forEach(myfunction);
+            function myfunction(value,index,arrray){
+                demo += value + "<br>" ;
+                document.getElementById("each").innerHTML = demo;
+            }
+            var demo2 = "" ;
+
+            Alphabet.map(myfunction2);  
+            function myfunction2(value,index,array){
+                demo2 += index + "<br>" ;
+             
+             
+                document.getElementById('map').innerHTML = demo2 ;
+            }
+            
+            var demo3 = "";
+            Alphabet.filter(myfunction3);
+            function myfunction3(value,index,array){
+                demo3 += array + "<br>";
+                document.getElementById('filter').innerHTML = demo3;
+            }
+            </script>
+    </body>
+</html>
